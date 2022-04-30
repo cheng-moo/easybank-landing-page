@@ -1,7 +1,7 @@
 @keyframes fade-in {
     from {
         // display: none; /* Display Property can't be animated REMEMBER! */
-        visibility: hidden;
+        visibility: hidden; //visibility can be animated
         opacity: 0;
     }
     1% {
@@ -21,7 +21,7 @@
 @keyframes fade-out {
     from {
         // display: none; /* Display Property can't be animated REMEMBER! */
-        visibility: visible;
+        visibility: visible; 
         opacity: 1;
 
     }

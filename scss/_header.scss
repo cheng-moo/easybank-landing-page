@@ -1,12 +1,13 @@
 @use './config' as *;
 @use './globals';
 
+
 .header {
 
     // Hamburger Open Styles
         &.open {
 
-            .header__menu {
+            .header__toggle {
             > span:first-child {
                 transform: rotate(45deg);
             }
@@ -19,12 +20,13 @@
                 transform: rotate(-45deg);
             }
         }
+       
     }
 
     .overlay { //Another way to make overlay;
-        
+            
         position: fixed;
-        top: 3.75rem;
+        top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
@@ -33,12 +35,14 @@
                 $darkBlue,
                 transparent
             );
-            
-
+           
     }
 
     nav {
-        padding: 1.0625rem 1.5rem;
+        position: relative;
+        background-color: $white;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
     &__logo {
@@ -48,7 +52,7 @@
         }
     }
 
-    &__menu {
+    &__toggle {
 
         > span {
             display: block;
@@ -61,6 +65,23 @@
             &:not(:last-child) {
                 margin-bottom: 5px;
             }  
+        }
+    }
+
+    &__menu {
+        background: $white;
+        padding: 1.625rem;
+        border-radius: 5px;
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%; //The Container                          /*A way of
+        transform: translateX(-50%); //The Object it self        Centering*/
+        margin-top: 1.5rem;
+        a {
+            color: $darkBlue;
+            padding: 0.625rem;
+            display: block;
+            text-align: center;
         }
     }
 

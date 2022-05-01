@@ -16,6 +16,9 @@ body {
   color: hsl(233deg, 8%, 62%);
   font-weight: 300;
 }
+body.noscroll {
+  overflow: hidden;
+}
 
 a, a:visited, a:hover {
   text-decoration: none;
@@ -56,31 +59,39 @@ button, .button {
   }
 }
 
-.header.open .header__menu > span:first-child {
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   transform: rotate(-45deg);
 }
 .header .overlay {
   position: fixed;
-  top: 3.75rem;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
 }
 .header nav {
-  padding: 1.0625rem 1.5rem;
+  position: relative;
+  background-color: hsl(0deg, 0%, 100%);
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
 }
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -88,8 +99,24 @@ button, .button {
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
+}
+.header__menu {
+  background: hsl(0deg, 0%, 100%);
+  padding: 1.625rem;
+  border-radius: 5px;
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.5rem;
+}
+.header__menu a {
+  color: hsl(233deg, 26%, 24%);
+  padding: 0.625rem;
+  display: block;
+  text-align: center;
 }
 .header__links a {
   position: relative;
@@ -128,6 +155,10 @@ button, .button {
   opacity: 0.75;
 }
 
+.has-fade {
+  visibility: hidden;
+}
+
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -139,6 +170,7 @@ button, .button {
   }
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -153,11 +185,12 @@ button, .button {
   }
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -190,6 +223,6 @@ button, .button {
   }
 }
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
 }/*# sourceMappingURL=main.css.map */

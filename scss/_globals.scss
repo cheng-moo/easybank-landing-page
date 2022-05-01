@@ -16,6 +16,10 @@ body {
     font-size: $font-med;
     color: $grayishBlue;
     font-weight: 300;
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 a, a:visited, a:hover {
@@ -65,4 +69,10 @@ button, .button {
     @include breakpoint-up(large){
         display: none;
     }
+}
+
+// Spacing
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }

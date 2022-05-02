@@ -4,17 +4,16 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ## Table of contents
 
-- [Overview] (#overview)
-- [The challenge] (#the-challenge)
-- [Screenshot] (#screenshot)
-- [Links] (#links)
-- [My Process] (#my-process)
-- [Built with] (#built-with)
-- [What I learned] (#what-i-learned)
-- [Continued development] (#continued-development)
-- [Useful resources] (#useful-resources)
-- [Author] (#author)
-- [Acknowledgments] (#acknowledgments)
+- [Overview](#overview)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [My Process](#my-process)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-using-sass-scss-mobilefirst-workflow-and-bem-HkiW-i6rc)
+- Live Site URL: [Live Site](https://cheng-moo.github.io/easybank-landing-page/dist/)
 
 
 ## My process
